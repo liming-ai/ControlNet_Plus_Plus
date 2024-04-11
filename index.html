@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="AlignDet pre-trains all the modules for all detectors in an efficient manner.">
+  <meta name="keywords" content="Self-supervised Learning, Detection">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ControlNet++: Improving Conditional Controls with Efficient Consistency Feedback</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Improving Conditional Controls<br> with Efficient Consistency Feedback</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://liming-ai.github.io/">Ming Li</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://taoyang1122.github.io/">Taojiannan Yang</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=FunSYJUAAAAJ&hl=zh-CN&oi=ao">Huafeng Kuang</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://wujie1010.github.io">Jie Wu</a><sup>2</sup>,
+            </span>
+            <br>
+            <span class="author-block">
+              <a href="https://www.zhaoningwang.com">Zhaoning Wang</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=CVkM9TQAAAAJ&hl=zh-CN&oi=ao">Xuefeng Xiao</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.crcv.ucf.edu/chenchen/index.html">Chen Chen</a><sup>1</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <!-- <span class="author-block"><font size=3>(* denotes equal contribution)</font></span><br> -->
+            <span class="author-block"><sup>1</sup>Center for Research in Computer Vision, University of Central Florida,</span>
+            <span class="author-block"><sup>2</sup>ByteDance Inc</span><br>
+            <!-- <span class="author-block"><b><font size=5>ICCV 2023</font></b></span> -->
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- arXiv Abstract Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2307.11077"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/liming-ai/AlignDet"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="./static/images/teaser.png"
+                 class="interpolation-image"
+                 alt="Interpolate start reference image."/>
+      <h2 class="subtitle has-text-justified">
+        <b>(a)</b> Given the same input image condition and text prompt, <b>(b)</b> the extracted conditions of our generated images are more consistent with the inputs, <b>(c,d)</b> while other methods fail to achieve accurate controllable generation. SSIM scores measure the similarity between all input edge conditions and the extracted edge conditions. All the line edges are extracted by the same line detection model used by ControlNet
+      </h2>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            To enhance the controllability of text-to-image diffusion models, existing efforts like ControlNet incorporated image-based conditional controls. In this paper, we reveal that existing methods still face significant challenges in generating images that align with the image conditional controls. To this end, we propose ControlNet++, a novel approach that improves controllable generation by explicitly optimizing pixel-level cycle consistency between generated images and conditional controls. Specifically, for an input conditional control, we use a pre-trained discriminative reward model to extract the corresponding condition of the generated images, and then optimize the consistency loss between the input conditional control and extracted condition. A straightforward implementation would be generating images from random noises and then calculating the consistency loss, but such an approach requires storing gradients for multiple sampling timesteps, leading to considerable time and memory costs. To address this, we introduce an efficient reward strategy that deliberately disturbs the input images by adding noise, and then uses the single-step denoised images for reward fine-tuning. This avoids the extensive costs associated with image sampling, allowing for more efficient reward fine-tuning. Extensive experiments show that ControlNet++ significantly improves controllability under various conditional controls. For example, it achieves improvements over ControlNet by 7.9% mIoU, 13.4% SSIM, and 7.6% RMSE, respectively, for segmentation mask, line-art edge, and depth conditions.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+  </div>
+</section>
+
+
+<!-- Comparison -->
+<div class="columns is-centered has-text-centered">
+  <div class="column is-four-fifths">
+    <h2 class="title is-3">Cycle Consistency in Conditional Generation</h2>
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <img src="./static/images/cycle_consistency.png"
+                   class="interpolation-image"
+                   alt="Interpolate start reference image."/>
+        <h2 class="subtitle has-text-justified">
+          <p>
+            We first prompt the diffusion model \( G \) to generate an image \( x'_0 \) based on the given image condition \( c_v \) and text prompt \( c_t \), then extract the corresponding image condition \( \hat{c}_v \) from the generated image \( x'_0 \) using pre-trained discriminative models \( D \). The cycle consistency is defined as the similarity between the extracted condition \( \hat{c}_v \) and input condition \( c_v \).
+          </p>
+        </h2>
+      </div>
+    </div>
+  </div>
+</div>
+<!--/ Comparison -->
+
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            The template is borrowed from the <a
+              href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
