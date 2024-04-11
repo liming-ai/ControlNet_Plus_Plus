@@ -93,7 +93,7 @@
                 </a>
               </span>
               <!-- Code Link. -->
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="https://github.com/liming-ai/AlignDet"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -101,7 +101,7 @@
                   </span>
                   <span>Code</span>
                   </a>
-              </span>
+              </span> -->
             </div>
 
           </div>
@@ -119,7 +119,7 @@
                  class="interpolation-image"
                  alt="Interpolate start reference image."/>
       <h2 class="subtitle has-text-justified">
-        <b>(a)</b> Given the same input image condition and text prompt, <b>(b)</b> the extracted conditions of our generated images are more consistent with the inputs, <b>(c,d)</b> while other methods fail to achieve accurate controllable generation. SSIM scores measure the similarity between all input edge conditions and the extracted edge conditions. All the line edges are extracted by the same line detection model used by ControlNet
+        <b>(a)</b> Given the same input image condition and text prompt, <b>(b)</b> the extracted conditions of our generated images are more consistent with the inputs, <b>(c,d)</b> while other methods fail to achieve accurate controllable generation. SSIM scores measure the similarity between all input edge conditions and the extracted edge conditions. All the line edges are extracted by the same line detection model used by ControlNet.
       </h2>
     </div>
   </div>
@@ -144,7 +144,7 @@
 </section>
 
 
-<!-- Comparison -->
+<!-- Cycle Consistency -->
 <div class="columns is-centered has-text-centered">
   <div class="column is-four-fifths">
     <h2 class="title is-3">Cycle Consistency in Conditional Generation</h2>
@@ -163,7 +163,79 @@
   </div>
 </div>
 <!--/ Comparison -->
+<div class="columns is-centered has-text-centered">
+  <div class="column is-four-fifths">
+    <h2 class="title is-3">Comparison with Exiting Efforts</h2>
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <img src="./static/images/comparison.png"
+                   class="interpolation-image"
+                   alt="Interpolate start reference image."/>
+        <h2 class="subtitle has-text-justified">
+          <p>
+            <b>(a)</b> Existing methods achieve implicit controllability by introducing imagebased conditional control \( c_v \) into the denoising process of diffusion models, with the guidance of latent-space denoising loss. <b>(b)</b> We utilize discriminative reward models \( D \) to explicitly optimize the controllability of G via pixel-level cycle consistency loss.
+          </p>
+        </h2>
+      </div>
+    </div>
+  </div>
+</div>
+<!--/ Efficient Reward Fine-tuning -->
+<div class="columns is-centered has-text-centered">
+  <div class="column is-four-fifths">
+    <h2 class="title is-3">Efficient Reward Strategy</h2>
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <img src="./static/images/efficient_reward.png"
+                   class="interpolation-image"
+                   alt="Interpolate start reference image."/>
+        <h2 class="subtitle has-text-justified">
+          <p>
+            <b>(a)</b> Pipeline of default reward fine-tuning strategy. Reward fine-tuning requires sampling all the way to the full image. Such a method needs to keep all gradients for each timestep and the memory required is unbearable by current GPUs. <b>(b)</b> Pipeline of our efficient reward strategy. We add a small noise \( \epsilon_t (t \leq t_{thre} ) \) to disturb the consistency between input images and conditions, then the single-step denoised image can be directly used for efficient reward fine-tuning.
+          </p>
+        </h2>
+      </div>
+    </div>
+  </div>
+</div>
 
+<!-- Results -->
+<div class="columns is-centered has-text-centered">
+  <div class="column is-four-fifths">
+    <h2 class="title is-3">Better controllability without sacrificing FID and CLIP-Score</h2>
+
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <!-- COCO 12k & 90k. -->
+        <img src="./static/images/Controllability.png"
+        class="interpolation-image"
+        alt="Interpolate start reference image."/>
+        <!-- Different backbones, SOTA, transfer learning, baseline. -->
+        <img src="./static/images/fid_and_clip.png"
+        class="interpolation-image"
+        alt="Interpolate start reference image."/>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Results -->
+<div class="columns is-centered has-text-centered">
+  <div class="column is-four-fifths">
+    <h2 class="title is-3">Facilitate Segmentation Task with Generated Images</h2>
+
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <!-- COCO 12k & 90k. -->
+        <img src="./static/images/seg_training.png"
+        class="interpolation-image"
+        alt="Interpolate start reference image."/>
+      </div>
+    </div>
+
+  </div>
+</div>
 
 
 <footer class="footer">
