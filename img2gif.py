@@ -1,7 +1,7 @@
 import os
 import imageio
 
-task = 'seg'
+task = 'lineart'
 
 # Define the filenames of your images
 root_dir = f'images/{task}'
@@ -14,4 +14,4 @@ for filename in filenames:
     images.append(imageio.imread(filename))
 
 # Write the images to a gif file
-imageio.mimsave(f'{task}.gif', images, fps=0.3)
+imageio.mimsave(f'{task}.gif', images, fps=0.3, loop=0)
