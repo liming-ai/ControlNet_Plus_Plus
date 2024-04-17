@@ -29,7 +29,7 @@ Please download the model weights and put them into each subset of `checkpoints`
 |:----------:|:------------------------------------------------------------------------------------|
 |  LineArt   | [model](https://huggingface.co/spaces/limingcv/ControlNet-Plus-Plus/resolve/main/checkpoints/lineart/controlnet/diffusion_pytorch_model.bin) |
 |  Depth   |  [model](https://huggingface.co/spaces/limingcv/ControlNet-Plus-Plus/resolve/main/checkpoints/depth/controlnet/diffusion_pytorch_model.safetensors) |
-|  Segmentation   | [model](https://huggingface.co/spaces/limingcv/ControlNet-Plus-Plus/resolve/main/checkpoints/seg/controlnet/diffusion_pytorch_model.bin) |
+|  Segmentation   | [model](https://huggingface.co/spaces/limingcv/ControlNet-Plus-Plus/resolve/main/checkpoints/seg/controlnet/diffusion_pytorch_model.safetensors) |
 |  Hed (SoftEdge)   | [model](https://huggingface.co/spaces/limingcv/ControlNet-Plus-Plus/resolve/main/checkpoints/hed/controlnet/diffusion_pytorch_model.bin) |
 | Canny | [model](https://huggingface.co/spaces/limingcv/ControlNet-Plus-Plus/resolve/main/checkpoints/canny/controlnet/diffusion_pytorch_model.safetensors) |
 
