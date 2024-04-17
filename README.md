@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-<img src="https://liming-ai.github.io/ControlNet_Plus_Plus/static/images/teaser.png" width=95%>
+<img src="images/github_imgs/teaser.png" width=95%>
 <p>
 
 <br>
@@ -66,7 +66,7 @@ We model image-based controllable generation as an image translation task from i
 
 
 <p align="center">
-<img src="https://liming-ai.github.io/ControlNet_Plus_Plus/static/images/vis_comparison.png" width=95%>
+<img src="images/github_imgs/vis_comparison.png" width=95%>
 <p>
 
 
