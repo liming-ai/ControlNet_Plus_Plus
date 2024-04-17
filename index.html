@@ -234,13 +234,25 @@
 
     <div class="container is-max-desktop">
       <div class="hero-body">
-        <img src="./static/images/results.png"
+        <img src="static/images/QuantitativeResults.png"  width="70%"
         class="interpolation-image"
         alt="Interpolate start reference image."/>
         <h1 class="subtitle has-text-justified">
           <p>
-            <b>Tab (1,2):</b> We achieves significant controllability improvements without sacrificing image quality.</br>
-            <b>Fig:</b> Training segmentation model from scratch with our synthesis images achieves better results.
+            We achieves significant controllability improvements without sacrificing image quality (FID).
+          </p>
+        </h2>
+      </div>
+    </div>
+
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <img src="static/images/QualitativeResults.png"  width="80%"
+        class="interpolation-image"
+        alt="Interpolate start reference image."/>
+        <h1 class="subtitle has-text-justified">
+          <p>
+            To further validate our improvements in controllability and their impact, we use the generated images along with real human-annotated labels to create a new dataset for training discriminative models from scratch. The segmentation model trained on our images outperforms the baseline results (ControlNet) by a large margin. Please note that this improvement is significant in segmentation tasks.
           </p>
         </h2>
       </div>
