@@ -62,7 +62,7 @@ We model image-based controllable generation as an image translation task from i
 <p>
 
 
-### 🔥 Better Controllability Than Exisiting Methods (Qualitative Results):
+### 🔥 Better Controllability Than Existing Methods (Qualitative Results):
 
 
 <p align="center">
@@ -71,7 +71,7 @@ We model image-based controllable generation as an image translation task from i
 
 
 
-### 🔥 Better Controllability Than Exisiting Methods (Quantitative Results):
+### 🔥 Better Controllability Than Existing Methods (Quantitative Results):
 
 <p align="center">
 <img src="https://liming-ai.github.io/ControlNet_Plus_Plus/static/images/results.png" width=95%>
