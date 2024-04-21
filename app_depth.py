@@ -16,6 +16,14 @@ examples = [
         "images/depth/depth_demo.png",
         "heart, mountains, and nature image",
     ],
+    [
+        "images/depth/depth_demo2.png",
+        "Log Cabin In The Mountains At Winter Wallpaper Winter Wallpaper Winter House Tree Log Wallpaper",
+    ],
+    [
+        "images/depth/depth_demo3.jpg",
+        "Bunny Williams Inspiration With Bunny Williams Home Image",
+    ],
 ]
 
 

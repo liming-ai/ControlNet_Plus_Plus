@@ -16,6 +16,14 @@ examples = [
         "images/hed/hed_demo.jpeg",
         "Language trip to Laon",
     ],
+    [
+        "images/hed/hed_demo2.jpg",
+        "Dark wolf wallpaper",
+    ],
+    [
+        "images/hed/hed_demo3.jpg",
+        "Beauty: Vivien Leigh plays Emma in the 1941 film That Hamilton Woman",
+    ],
 ]
 
 def create_demo(process):

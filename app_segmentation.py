@@ -20,6 +20,10 @@ examples = [
         "images/seg/seg_demo.png",
         "A large building with a pointed roof and several chimneys",
     ],
+    [
+        "images/seg/143.png",
+        "A bedroom with a bed, dresser, and a ceiling fan",
+    ],
 ]
 
 def create_demo(process):

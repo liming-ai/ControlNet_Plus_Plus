@@ -16,6 +16,14 @@ examples = [
         "images/canny/canny_demo.jpg",
         "BEAUTIFUL PORTRAIT PAINTINGS BY EMMA UBER",
     ],
+    [
+        "images/canny/canny_demo2.jpg",
+        "Serious Dog Portraits",
+    ],
+    [
+        "images/canny/canny_demo3.jpg",
+        "Cheese and Nuts.Oil on Linen.27x46cm. Private Collection",
+    ],
 ]
 
 def create_demo(process):
