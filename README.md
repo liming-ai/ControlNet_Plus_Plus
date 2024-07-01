@@ -8,8 +8,6 @@
 </div>
 <p align="center" style="font-size: larger;">
   <a href="https://arxiv.org/abs/2404.07987">ControlNet++: Improving Conditional Controls with Efficient Consistency Feedback</a>
-
-  We will release all the training code and organized data this Friday.
 </p>
 
 <p align="center">
@@ -17,6 +15,8 @@
 <p>
 
 <br>
+
+## 📢 We will release all the training code and organized data this Friday.
 
 ## 🕹️ Try and Play with ControlNet++
 
