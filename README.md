@@ -1,5 +1,5 @@
 # ControlNet++: Improving Conditional Controls with Efficient Consistency Feedback (ECCV 2024)
-
+## Training code will be released in this Friday.
 <div align="center">
 
 [![arXiv](https://img.shields.io/badge/arXiv%20paper-2404.07987-b31b1b.svg)](https://arxiv.org/abs/2404.07987)&nbsp;
