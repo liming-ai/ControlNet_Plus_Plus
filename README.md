@@ -86,10 +86,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Citation
 If our work assists your research, feel free to give us a star ⭐ or cite us using:
 ```
-@article{li2024controlnet,
-    author  = {Ming Li, Taojiannan Yang, Huafeng Kuang, Jie Wu, Zhaoning Wang, Xuefeng Xiao, Chen Chen},
-    title   = {ControlNet++: Improving Conditional Controls with Efficient Consistency Feedback},
-    journal = {arXiv preprint arXiv:2404.07987},
-    year    = {2024},
+@article{controlnet_plus_plus,
+    author    = {Ming Li, Taojiannan Yang, Huafeng Kuang, Jie Wu, Zhaoning Wang, Xuefeng Xiao, Chen Chen},
+    title     = {ControlNet++: Improving Conditional Controls with Efficient Consistency Feedback},
+    booktitle = {European Conference on Computer Vision (ECCV)},
+    year      = {2024},
 }
 ```
