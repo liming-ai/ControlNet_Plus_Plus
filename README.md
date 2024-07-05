@@ -1,5 +1,4 @@
 # ControlNet++: Improving Conditional Controls with Efficient Consistency Feedback (ECCV 2024)
-## 📢 We will release all the training, evaluation code and organized data this Friday.
 <div align="center">
 
 [![arXiv](https://img.shields.io/badge/arXiv%20paper-2404.07987-b31b1b.svg)](https://arxiv.org/abs/2404.07987)&nbsp;
@@ -21,6 +20,7 @@
 We provide a [demo website](https://huggingface.co/spaces/limingcv/ControlNet-Plus-Plus) for you to play with our ControlNet++ models and generate images interactively. For local running, please run the following command:
 ```bash
 git clone https://github.com/liming-ai/ControlNet_Plus_Plus.git
+git checkout inference
 pip3 install -r requirements.txt
 ```
 
