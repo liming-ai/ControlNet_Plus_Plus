@@ -29,7 +29,7 @@ pip3 install "mmsegmentation>=1.0.0"
 
 
 ## 🕹️ Training
-By default, our training is based on 8 A100-80G GPUs. If your computational resources are insufficient for training, you may want to reduce the batch size and increase gradient accumulation at the same time, and we have not observed any performance degradation. Reducing the training resolution will result in some performance degradation.
+By default, our training is based on 8 A100-80G GPUs. If your computational resources are insufficient for training, you may need to reduce the batch size and increase gradient accumulation at the same time, and we have not observed any performance degradation. Reducing the training resolution will result in performance degradation.
 
 ### For segmentation task
 [ControlNet V1.1 Seg](https://github.com/lllyasviel/ControlNet-v1-1-nightly/blob/main/README.md#controlnet-11-segmentation) is trained on both ADE20K and COCOStuff, and these two datasets have different masks. To this end, we first perform normal model fine-tuning on each dataset, and then perform reward fine-tuning.
