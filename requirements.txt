@@ -1,0 +1,13 @@
+diffusers
+datasets
+transformers
+tensorboard
+wandb
+huggingface_hub
+ftfy
+kornia==0.7.0
+git+https://github.com/huggingface/accelerate.git
+# git+https://github.com/facebookresearch/xformers.git@main#egg=xformers
+openmim
+torchmetrics
+torch-fidelity
