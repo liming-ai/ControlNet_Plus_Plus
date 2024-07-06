@@ -1428,14 +1428,14 @@ def main(args):
                 """
                 Rewarding ControlNet
                 """
-                # compute the original image
+                # Predict the single-step denoised latents
                 pred_original_sample = [
                     noise_scheduler.step(noise, t, noisy_latent).pred_original_sample.to(weight_dtype) \
                         for (noise, t, noisy_latent) in zip(model_pred, timesteps, noisy_latents)
                 ]
                 pred_original_sample = torch.stack(pred_original_sample)
 
-                # compute the original image
+                # Map the denoised latents into RGB images
                 pred_original_sample = 1 / vae.config.scaling_factor * pred_original_sample
                 image = vae.decode(pred_original_sample.to(weight_dtype)).sample
                 image = (image / 2 + 0.5).clamp(0, 1)
@@ -1500,7 +1500,7 @@ def main(args):
 
                 labels = [x.to(accelerator.device) for x in labels] if isinstance(labels, list) else labels.to(accelerator.device)
 
-                # timestep-based filtering
+                # Determine which samples in the current batch need to calculate reward loss
                 timestep_mask = (args.min_timestep_rewarding <= timesteps.reshape(-1, 1)) & (timesteps.reshape(-1, 1) <= args.max_timestep_rewarding)
 
                 # calculate the reward loss

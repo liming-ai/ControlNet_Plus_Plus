@@ -77,6 +77,12 @@ else:
 ```
 #### Step 3: Apply both diffusion training loss and reward loss:
 ```python
+# reward model inference
+if args.task_name == 'canny':
+    outputs = reward_model(image.to(accelerator.device), low_threshold, high_threshold)
+else:
+    outputs = reward_model(image.to(accelerator.device))
+
 # Determine which samples in the current batch need to calculate reward loss
 timestep_mask = (args.min_timestep_rewarding <= timesteps.reshape(-1, 1)) & (timesteps.reshape(-1, 1) <= args.max_timestep_rewarding)
 
