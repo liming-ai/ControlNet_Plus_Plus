@@ -19,7 +19,7 @@ pip3 install "mmsegmentation>=1.0.0"
 ```
 
 ## 🕹️ Data Preperation
-All the organized data has been put on Huggingface and will be automatically downloaded during training or inference. You can also preview it in advance to check the number of data set samples and disk space occupied.
+**All the organized data has been put on Huggingface and will be automatically downloaded during training or evaluation.** You can preview it in advance to check the data samples and disk space occupied with following links.
 |   Task    | Training Data 🤗 | Evaluation Data 🤗 |
 |:----------:|:------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------|
 |  LineArt, Hed, Canny   | [Data](https://huggingface.co/datasets/limingcv/MultiGen-20M_train), 1.14 TB | [Data](https://huggingface.co/datasets/limingcv/MultiGen-20M_canny_eval), 2.25GB |
