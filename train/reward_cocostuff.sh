@@ -22,7 +22,7 @@ accelerate launch --config_file "train/config.yml" \
  --cache_dir="data/huggingface_datasets" \
  --resolution=512 \
  --train_batch_size=8 \
- --gradient_accumulation_steps=16 \
+ --gradient_accumulation_steps=4 \
  --learning_rate=1e-5 \
  --mixed_precision="fp16" \
  --gradient_checkpointing \
