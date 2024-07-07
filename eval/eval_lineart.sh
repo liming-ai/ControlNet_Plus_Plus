@@ -1,6 +1,6 @@
 # Path to the controlnet weight (can be huggingface or local path)
-# export CONTROLNET_DIR="lllyasviel/control_v11p_sd15_lineart"
-export CONTROLNET_DIR="checkpoints/lineart/controlnet"
+# export CONTROLNET_DIR="lllyasviel/control_v11p_sd15_lineart"  # Eval ControlNet
+export CONTROLNET_DIR="checkpoints/lineart/controlnet"  # Eval our ControlNet++
 # How many GPUs and processes you want to use for evaluation.
 export NUM_GPUS=8
 # Guidance scale and inference steps
