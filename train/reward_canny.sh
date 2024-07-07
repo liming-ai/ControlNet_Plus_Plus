@@ -25,7 +25,7 @@ accelerate launch --config_file "train/config.yml" \
  --lr_scheduler="constant_with_warmup" \
  --lr_warmup_steps=0 \
  --checkpointing_steps=500 \
- --grad_scale=0.5 \
+ --grad_scale=1.0 \
  --use_ema \
  --validation_steps=100 \
  --timestep_sampling_start=0 \
