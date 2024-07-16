@@ -5,7 +5,7 @@ export OUTPUT_DIR="work_dirs/reward_model/MultiGen20M_train/reward_canny_res512_
 
 
 accelerate launch --config_file "train/config.yml" \
- --main_process_port=23156 controlnet/reward_control.py \
+ --main_process_port=23156 train/reward_control.py \
  --pretrained_model_name_or_path=$MODEL_DIR \
  --controlnet_model_name_or_path=$CONTROLNET_DIR \
  --reward_model_name_or_path=$REWARDMODEL_DIR \

@@ -9,7 +9,7 @@ python3 -c "from huggingface_hub import hf_hub_download; hf_hub_download(repo_id
 
 # reward fine-tuning
 accelerate launch --config_file "train/config.yml" \
- --main_process_port=23156 controlnet/reward_control.py \
+ --main_process_port=23156 train/reward_control.py \
  --pretrained_model_name_or_path=$MODEL_DIR \
  --controlnet_model_name_or_path=$CONTROLNET_DIR \
  --reward_model_name_or_path=$REWARDMODEL_DIR \

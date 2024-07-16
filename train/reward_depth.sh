@@ -4,7 +4,7 @@ export REWARDMODEL_DIR="Intel/dpt-hybrid-midas"
 export OUTPUT_DIR="work_dirs/reward_model/MultiGen/reward_controlnet_sd15_depth_res512_bs256_lr1e-5_warmup100_scale-1.0_iter10k_fp16_train0-1k_reward0-200_mse-loss"
 
 accelerate launch --config_file "train/config.yml" \
- --main_process_port=23156 controlnet/reward_control.py \
+ --main_process_port=23156 train/reward_control.py \
  --pretrained_model_name_or_path=$MODEL_DIR \
  --controlnet_model_name_or_path=$CONTROLNET_DIR \
  --reward_model_name_or_path=$REWARDMODEL_DIR \

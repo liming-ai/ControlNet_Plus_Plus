@@ -7,7 +7,7 @@ export OUTPUT_DIR="work_dirs/finetune/Captioned_ADE20K/ft_controlnet_sd15_seg_re
 
 
 accelerate launch --config_file "train/config.yml" \
- --main_process_port=23156 controlnet/train_controlnet.py \
+ --main_process_port=23156 train/train_controlnet.py \
  --pretrained_model_name_or_path=$MODEL_DIR \
  --controlnet_model_name_or_path=$CONTROLNET_DIR \
  --output_dir=$OUTPUT_DIR \
