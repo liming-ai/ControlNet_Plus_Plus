@@ -26,7 +26,7 @@ pip3 install mmdet
 |  LineArt, Hed, Canny   | [Data](https://huggingface.co/datasets/limingcv/MultiGen-20M_train), 1.14 TB | [Data](https://huggingface.co/datasets/limingcv/MultiGen-20M_canny_eval), 2.25GB |
 |  Depth   |  [Data](https://huggingface.co/datasets/limingcv/MultiGen-20M_depth), 1.22 TB | [Data](https://huggingface.co/datasets/limingcv/MultiGen-20M_depth_eval), 2.17GB |
 |  Segmentation ADE20K   | [Data](https://huggingface.co/datasets/limingcv/Captioned_ADE20K), 7.04 GB | Same Path as Training Data |
-|  Segmentation COCOStuff   | [Data](https://huggingface.co/datasets/limingcv/Captioned_ADE20K), 61.9 GB | Same Path as Training Data |
+|  Segmentation COCOStuff   | [Data](https://huggingface.co/datasets/limingcv/Captioned_COCOStuff), 61.9 GB | Same Path as Training Data |
 
 
 ## 🕹️ Training
