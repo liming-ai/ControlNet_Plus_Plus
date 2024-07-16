@@ -51,7 +51,7 @@ def get_reward_loss(predictions, labels, task='segmentation', **args):
         torch.nn.Module: Loss class.
     """
     if task == 'segmentation':
-        return nn.functional.cross_entropy(predictions, labels, **args)
+        return nn.functional.cross_entropy(predictions, labels, ignore_index=255, **args)
     elif task == 'canny':
         loss = nn.functional.mse_loss(predictions, labels, **args).mean(2)
         return loss.mean((-1,-2))
