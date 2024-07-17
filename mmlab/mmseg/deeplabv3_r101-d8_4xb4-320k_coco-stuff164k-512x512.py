@@ -152,7 +152,7 @@ test_cfg = dict(type='TestLoop')
 
 concated_dataset = [
     dict(
-        img_suffix='.jpg', seg_map_suffix='.jpg',
+        img_suffix='.png', seg_map_suffix='.png',
         data_prefix=dict(
             img_path=f'images/group_{idx}', seg_map_path='annotations'),
         data_root=data_root,

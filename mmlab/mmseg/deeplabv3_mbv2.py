@@ -185,7 +185,7 @@ train_cfg = dict(
 
 concated_dataset = [
     dict(
-        img_suffix='.jpg', seg_map_suffix='.png',
+        img_suffix='.png', seg_map_suffix='.png',
         data_prefix=dict(
             img_path=f'images/group_{idx}', seg_map_path='annotations/training'),
         data_root=data_root,

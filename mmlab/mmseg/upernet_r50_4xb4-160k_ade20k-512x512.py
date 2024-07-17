@@ -157,7 +157,7 @@ resume = False
 test_cfg = dict(type='TestLoop')
 concated_dataset = [
     dict(
-        img_suffix='.jpg', seg_map_suffix='.jpg',
+        img_suffix='.png', seg_map_suffix='.png',
         data_prefix=dict(
             img_path=f'images/group_{idx}',
             seg_map_path='annotations'),
@@ -201,7 +201,7 @@ train_cfg = dict(
 train_dataloader = dict(
     batch_size=4,
     dataset=dict(
-        img_suffix='.jpg', seg_map_suffix='.jpg',
+        img_suffix='.png', seg_map_suffix='.png',
         data_prefix=dict(
             img_path='images/group_0',
             seg_map_path='annotations'),
