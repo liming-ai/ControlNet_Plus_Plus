@@ -117,7 +117,7 @@ bash eval/eval_hed.sh
 bash eval/eval_linedrawing.sh
 ```
 
-The ADE20K segmentation results in the arXiv v1 version of the paper were tested using images and labels saved in `.jpg` format, which resulted in errors. We retested and reported the results using images and labels saved in `.png` format, please refer to our latest arXiv and ECCV Camera Ready releases.
+The ADE20K segmentation mIoU results of ControlNet and ControlNet++ in the arXiv v1 version of the paper were tested using images and labels saved in `.jpg` format, which resulted in errors. We retested and reported the results using images and labels saved in `.png` format, please refer to our latest arXiv and ECCV Camera Ready releases.
 
 ## 🕹️ Inference
 Please refer to the [Inference Branch](https://github.com/liming-ai/ControlNet_Plus_Plus/tree/inference) or try our [online Huggingface demo](https://huggingface.co/spaces/limingcv/ControlNet-Plus-Plus)
