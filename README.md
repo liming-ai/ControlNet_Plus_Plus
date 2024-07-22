@@ -102,9 +102,10 @@ Please download the model weights and put them into each subset of `checkpoints`
 |:----------:|:------------------------------------------------------------------------------------|
 |  LineArt   | [model](https://huggingface.co/limingcv/reward_controlnet/tree/main/checkpoints/lineart) |
 |  Depth   |  [model](https://huggingface.co/limingcv/reward_controlnet/tree/main/checkpoints/depth) |
-|  Segmentation   | [model](https://huggingface.co/limingcv/reward_controlnet/tree/main/checkpoints/seg) |
 |  Hed (SoftEdge)   | [model](https://huggingface.co/limingcv/reward_controlnet/tree/main/checkpoints/hed) |
 | Canny | [model](https://huggingface.co/limingcv/reward_controlnet/tree/main/checkpoints/canny) |
+|  Segmentation (ADE20K)   | [UperNet-R50](https://huggingface.co/limingcv/reward_controlnet/tree/main/checkpoints/ade20k_reward-model-UperNet-R50/checkpoint-5000/controlnet), [FCN-R101](https://huggingface.co/limingcv/reward_controlnet/tree/main/checkpoints/ade20k_reward-model-FCN-R101-d8/checkpoint-5000/controlnet) |
+| Segmentation (COCOStuff) | [model](https://huggingface.co/limingcv/reward_controlnet/tree/main/checkpoints/cocostuff/reward_5k) |
 
 Please make sure the folder directory is consistent with the test script, then you can eval each model by:
 ```bash
@@ -116,7 +117,7 @@ bash eval/eval_hed.sh
 bash eval/eval_linedrawing.sh
 ```
 
-The ADE20K segmentation results in the arxiv version were tested using images and labels saved in `.jpg` format, which led to errors. We will retest and report the results using images and labels saved in `.png` format.
+The ADE20K segmentation results in the arXiv v1 version of the paper were tested using images and labels saved in `.jpg` format, which resulted in errors. We retested and reported the results using images and labels saved in `.png` format, please refer to our latest arXiv and ECCV Camera Ready releases.
 
 ## 🕹️ Inference
 Please refer to the [Inference Branch](https://github.com/liming-ai/ControlNet_Plus_Plus/tree/inference) or try our [online Huggingface demo](https://huggingface.co/spaces/limingcv/ControlNet-Plus-Plus)
