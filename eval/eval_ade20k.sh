@@ -1,6 +1,8 @@
 # Path to the controlnet weight (can be huggingface or local path)
 # export CONTROLNET_DIR="lllyasviel/control_v11p_sd15_seg"  # Eval ControlNet
-export CONTROLNET_DIR="checkpoints/seg/controlnet"  # Eval our ControlNet++
+# export CONTROLNET_DIR="checkpoints/ade20k_reward-model-FCN-R101-d8/checkpoint-5000/controlnet"  # Eval our ControlNet++
+export CONTROLNET_DIR="checkpoints/ade20k_reward-model-UperNet-R50/checkpoint-5000/controlnet"    # Eval our ControlNet++
+
 # How many GPUs and processes you want to use for evaluation.
 export NUM_GPUS=8
 # Guidance scale and inference steps
