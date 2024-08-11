@@ -97,6 +97,7 @@ loss = pretrain_loss + reward_loss * args.grad_scale
 ```
 
 ## 🕹️ Evaluation
+### Checkpoints Preparation
 Please download the model weights and put them into each subset of `checkpoints`:
 |   model    |HF weights🤗                                                                        |
 |:----------:|:------------------------------------------------------------------------------------|
@@ -107,6 +108,7 @@ Please download the model weights and put them into each subset of `checkpoints`
 |  Segmentation (ADE20K)   | [UperNet-R50](https://huggingface.co/limingcv/reward_controlnet/tree/main/checkpoints/ade20k_reward-model-UperNet-R50/checkpoint-5000/controlnet), [FCN-R101](https://huggingface.co/limingcv/reward_controlnet/tree/main/checkpoints/ade20k_reward-model-FCN-R101-d8/checkpoint-5000/controlnet) |
 | Segmentation (COCOStuff) | [model](https://huggingface.co/limingcv/reward_controlnet/tree/main/checkpoints/cocostuff/reward_5k) |
 
+### Evaluate Controllability
 Please make sure the folder directory is consistent with the test script, then you can eval each model by:
 ```bash
 bash eval/eval_ade20k.sh
@@ -122,6 +124,11 @@ bash eval/eval_linedrawing.sh
 **We retested and reported the results using images and labels saved in `.png` format, please refer to our latest arXiv and ECCV Camera Ready releases.**
 
 **Other comparison methods (Gligen/T2I-Adapter/UniControl/UniControlNet) and other evaluation metrics (FID/CLIP-score) were not affected by this error.**
+
+
+### Evaluate CLIP-Score and FID
+Please refer to the code of evaluating [CLIP-Score](eval/eval_clip.py) and [FID](eval/eval_fid.py)
+
 
 ## 🕹️ Inference
 Please refer to the [Inference Branch](https://github.com/liming-ai/ControlNet_Plus_Plus/tree/inference) or try our [online Huggingface demo](https://huggingface.co/spaces/limingcv/ControlNet-Plus-Plus)
