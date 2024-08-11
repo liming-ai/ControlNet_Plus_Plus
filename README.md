@@ -119,15 +119,11 @@ bash eval/eval_hed.sh
 bash eval/eval_linedrawing.sh
 ```
 
-**The segmentation mIoU results of ControlNet and ControlNet++ in the arXiv v1 version of the paper were tested using images and labels saved in `.jpg` format, which resulted in errors.**
-
-**We retested and reported the results using images and labels saved in `.png` format, please refer to our latest arXiv and ECCV Camera Ready releases.**
-
-**Other comparison methods (Gligen/T2I-Adapter/UniControl/UniControlNet) and other evaluation metrics (FID/CLIP-score) were not affected by this error.**
+*The segmentation mIoU results of ControlNet and ControlNet++ in the arXiv v1 version of the paper were tested using images and labels saved in `.jpg` format, which resulted in errors. We retested and reported the results using images and labels saved in `.png` format, please refer to our latest arXiv and ECCV Camera Ready releases. Other comparison methods (Gligen/T2I-Adapter/UniControl/UniControlNet) and other evaluation metrics (FID/CLIP-score) were not affected by this error.*
 
 
 ### Evaluate CLIP-Score and FID
-Please refer to the code of evaluating [CLIP-Score](eval/eval_clip.py) and [FID](eval/eval_fid.py)
+Please refer to the code for evaluating [CLIP-Score](eval/eval_clip.py) and [FID](eval/eval_fid.py)
 
 
 ## 🕹️ Inference
