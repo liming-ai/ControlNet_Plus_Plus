@@ -17,6 +17,8 @@ mim install mmengine
 mim install "mmcv==2.1.0"
 pip3 install "mmsegmentation>=1.0.0"
 pip3 install mmdet
+pip3 install clean-fid
+pip3 install torchmetrics
 ```
 
 ## 🕹️ Data Preperation
