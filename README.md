@@ -136,7 +136,7 @@ Please refer to the [Inference Branch](https://github.com/liming-ai/ControlNet_P
 This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE.txt) file for details.
 
 ## 🙏 Acknowledgements
-We sincerely thank the [Huggingface](https://huggingface.co), [ControlNet](https://github.com/lllyasviel/ControlNet) and [ImageReward](https://github.com/THUDM/ImageReward) communities for their open source code and contributions. Our project would not be possible without these amazing works.
+We sincerely thank the [Huggingface](https://huggingface.co), [ControlNet](https://github.com/lllyasviel/ControlNet), [OpenMMLab](https://github.com/open-mmlab) and [ImageReward](https://github.com/THUDM/ImageReward) communities for their open source code and contributions. Our project would not be possible without these amazing works.
 
 ## Citation
 If our work assists your research, feel free to give us a star ⭐ or cite us using:
