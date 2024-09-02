@@ -142,7 +142,7 @@ We sincerely thank the [Huggingface](https://huggingface.co), [ControlNet](https
 If our work assists your research, feel free to give us a star ⭐ or cite us using:
 ```
 @inproceedings{controlnet_plus_plus,
-    author    = {Ming Li, Taojiannan Yang, Huafeng Kuang, Jie Wu, Zhaoning Wang, Xuefeng Xiao, Chen Chen},
+    author    = {Ming Li and Taojiannan Yang and Huafeng Kuang and Jie Wu and Zhaoning Wang and Xuefeng Xiao and Chen Chen},
     title     = {ControlNet++: Improving Conditional Controls with Efficient Consistency Feedback},
     booktitle = {European Conference on Computer Vision (ECCV)},
     year      = {2024},
