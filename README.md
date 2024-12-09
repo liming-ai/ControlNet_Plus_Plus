@@ -88,7 +88,7 @@ If our work assists your research, feel free to give us a star ⭐ or cite us us
 ```
 @inproceedings{controlnet_plus_plus,
     author    = {Ming Li, Taojiannan Yang, Huafeng Kuang, Jie Wu, Zhaoning Wang, Xuefeng Xiao, Chen Chen},
-    title     = {ControlNet++: Improving Conditional Controls with Efficient Consistency Feedback},
+    title     = {ControlNet $$++ $$: Improving Conditional Controls with Efficient Consistency Feedback},
     booktitle = {European Conference on Computer Vision (ECCV)},
     year      = {2024},
 }
